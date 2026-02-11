@@ -87,8 +87,8 @@
 }
 
 .deployment-top, .best-enterprise {
-    background-color: #EBE9FE;
-    color: #6938EF;
+    background-color: #FAFAFA;
+    color: #181D27;
     max-width: max-content;
     border-top-left-radius: 12px;
     padding: 10px 24px 32px;
@@ -143,27 +143,25 @@
 }
 
 .best-enterprise {
-    color: #222244;
-    background: linear-gradient(93.5deg, rgba(224, 195, 252, 0.5) 0.74%, rgba(142, 197, 252, 0.5) 70.24%);
+    color: white;
+    background: linear-gradient(93.5deg, #123C73 0.74%, #000306 70.24%);
     font-weight: 500;
 }
 
-.collate-managed {
-    box-shadow: 0px 4px 12px 0px #0A0D1214;
-    background: linear-gradient(93.5deg, rgba(224, 195, 252, 0.5) 0.74%, rgba(142, 197, 252, 0.5) 70.24%);
-    position: relative;
-    z-index: 24;
-    padding: 3px;
-    border-radius: 12px;
-}
-
 .collate-content {
-    background-color: white;
+    background-image: url('/public/images/homepage-banner.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 12px;
-    padding: 24px;
+    padding: 24px 36px;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     gap: 24px;
+    position: relative;
+    z-index: 24;
 }
 
 .collate-content .collate-logo {
@@ -174,29 +172,32 @@
 .collate-content h3 {
     font-size: 20px;
     font-weight: 600;
-    color: #181D27;
+    color: white;
 }
 
 .collate-content p {
-    color: #717680;
+    color: white;
     margin-top: 2px;
+    max-width: 80%;
 }
 
 .collate-content .explore-collate {
-    background-color: #6938EF;
-    color: white;
+    background-color: #FBE200;
+    color: black;
     font-size: 14px;
     white-space: nowrap;
     padding: 10px 14px;
     border-radius: 6px;
+    position: relative;
+    right: 60px;
 }
 
 .collate-content .explore-collate:hover {
-    background-color: #522eb4;
+    background-color: #dec908;
 }
 
 .collate-content .explore-collate a {
-    color: white;
+    color: black;
     font-weight: 600;
 }
 
@@ -377,7 +378,7 @@ a.guide-card img {
 }
 
 .collate-video {
-    background: linear-gradient(135deg, rgba(224, 195, 252, 0.5) 0%, rgba(142, 197, 252, 0.5) 100%);
+    background: linear-gradient(135deg, rgb(224 195 252 / 50%) 0%, rgb(142 197 252 / 50%) 100%);
     border-radius: 24px;
     max-width: 90%;
     margin: 32px auto 64px;
@@ -665,6 +666,14 @@ a.guide-card img {
     .home-footer-social {
         justify-self: flex-end;
     }
+
+    .collate-content .explore-collate {
+        right: 0px;
+    }
+
+    .collate-content p {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -685,8 +694,18 @@ a.guide-card img {
     }
 
     .collate-content {
+        background-image: url('/public/images/homepage-banner-mobile.png');
+        background-size: 100% 100%;
+        background-position: bottom center;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
+        padding: 48px 24px;
+        padding-bottom: 200px;
+    }
+
+    .collate-content p {
+        max-width: 100%;
     }
 
     .guide-list {
@@ -743,5 +762,15 @@ a.guide-card img {
 
     .explore-items {
         flex-direction: column;
+    }
+
+    .best-enterprise {
+        padding: 10px 36px 32px 16px;
+        font-size: 14px;
+    }
+
+    .collate-content h3 {
+        line-height: 28px;
+        margin-bottom: 12px;
     }
 }
