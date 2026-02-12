@@ -1,7 +1,6 @@
 ---
 title: Run the Tableau Connector Externally
 description: Configure Tableau dashboard connections in OpenMetadata using YAML. Step-by-step guide for seamless data catalog integration and metadata extraction.
-slug: /connectors/dashboard/tableau/yaml
 sidebarTitle: Run Externally
 mode: "wide"
 ---
@@ -13,7 +12,7 @@ import IngestionSink from '/snippets/connectors/yaml/ingestion-sink.mdx'
 import WorkflowConfig from '/snippets/connectors/yaml/workflow-config.mdx'
 import IngestionCli from '/snippets/connectors/yaml/ingestion-cli.mdx'
 import PythonRequirements from '/snippets/connectors/python-requirements.mdx'
-import ExternalIngestionDeployment from '/snippets/connectors/external-ingestion-deployment.mdx'
+import ExternalIngestionDeployment from '/snippets/v1.10.x/connectors/external-ingestion-deployment.mdx'
 
 <ConnectorDetailsHeader
 icon='/public/images/connectors/tableau.webp'
@@ -26,7 +25,7 @@ Configure and schedule Tableau metadata and profiler workflows from the OpenMeta
 - [Requirements](#requirements)
 - [Metadata Ingestion](#metadata-ingestion)
 - [Enable Security](#securing-tableau-connection-with-ssl-in-openmetadata)
-- [Reverse Metadata](/applications/reverse-metadata)
+
 <ExternalIngestionDeployment />
 ## Requirements
 To ingest tableau metadata, minimum `Site Role: Viewer` is required for the tableau user.

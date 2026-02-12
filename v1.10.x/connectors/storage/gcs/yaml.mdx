@@ -1,7 +1,6 @@
 ---
 title: Run the GCS Connector Externally
 description: Use YAML to configure GCS storage ingestion for metadata visibility into cloud buckets.
-slug: /connectors/storage/gcs/yaml
 sidebarTitle: Run Externally
 mode: "wide"
 ---
@@ -10,7 +9,7 @@ import { CodePreview, ContentPanel, ContentSection, CodePanel } from '/snippets/
 import GcpConfigDef from '/snippets/connectors/yaml/common/gcp-config-def.mdx'
 import IngestionSinkDef from '/snippets/connectors/yaml/ingestion-sink-def.mdx'
 import WorkflowConfigDef from '/snippets/connectors/yaml/workflow-config-def.mdx'
-import ExternalIngestionDeployment from '/snippets/connectors/external-ingestion-deployment.mdx'
+import ExternalIngestionDeployment from '/snippets/v1.10.x/connectors/external-ingestion-deployment.mdx'
 import IngestionSink from '/snippets/connectors/yaml/ingestion-sink.mdx'
 import WorkflowConfig from '/snippets/connectors/yaml/workflow-config.mdx'
 import StorageSourceConfigDef from '/snippets/connectors/yaml/storage/source-config-def.mdx'
@@ -33,7 +32,7 @@ To run the GCS ingestion, you will need to install:
 ```bash
 pip3 install "openmetadata-ingestion[datalake-gcs]"
 ```
-<Card title="OpenMetadata 1.0 or later" href="/deployment" >
+<Card title="OpenMetadata 1.0 or later" href="/v1.10.x/deployment" >
     To deploy OpenMetadata, check the Deployment guides.
   </Card>
 We need the following permissions in GCP:

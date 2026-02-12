@@ -1,21 +1,20 @@
 ---
 title: Run the Redshift Connector Externally
 description: Ingest metadata from Redshift using YAML and configure access, profiling, and lineage extraction.
-slug: /connectors/database/redshift/yaml
 sidebarTitle: Run Externally
 mode: "wide"
 ---
 import { ConnectorDetailsHeader } from '/snippets/components/ConnectorDetailsHeader/ConnectorDetailsHeader.jsx'
 import { CodePreview, ContentPanel, ContentSection, CodePanel } from '/snippets/components/CodePreview.jsx'
 import AutoClassification from '/snippets/connectors/yaml/auto-classification.mdx'
-import DataProfiler from '/snippets/connectors/yaml/data-profiler.mdx'
+import DataProfiler from '/snippets/v1.10.x/connectors/yaml/data-profiler.mdx'
 import Lineage from '/snippets/connectors/yaml/lineage.mdx'
 import QueryUsage from '/snippets/connectors/yaml/query-usage.mdx'
 import IngestionSinkDef from '/snippets/connectors/yaml/ingestion-sink-def.mdx'
 import WorkflowConfigDef from '/snippets/connectors/yaml/workflow-config-def.mdx'
 import IngestionCli from '/snippets/connectors/yaml/ingestion-cli.mdx'
 import PythonRequirements from '/snippets/connectors/python-requirements.mdx'
-import ExternalIngestionDeployment from '/snippets/connectors/external-ingestion-deployment.mdx'
+import ExternalIngestionDeployment from '/snippets/v1.10.x/connectors/external-ingestion-deployment.mdx'
 import IngestionSink from '/snippets/connectors/yaml/ingestion-sink.mdx'
 import WorkflowConfig from '/snippets/connectors/yaml/workflow-config.mdx'
 import SourceConfigDef from '/snippets/connectors/yaml/database/source-config-def.mdx'
@@ -39,7 +38,7 @@ Configure and schedule Redshift metadata and profiler workflows from the OpenMet
 - [Data Quality](#data-quality)
 - [dbt Integration](#dbt-integration)
 - [Enable Security](#securing-redshift-connection-with-ssl-in-openmetadata)
-- [Reverse Metadata](/applications/reverse-metadata)
+
 <ExternalIngestionDeployment />
 ## Requirements
 Redshift user must grant `SELECT` privilege on table [SVV_TABLE_INFO](https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_TABLE_INFO.html) to fetch the metadata of tables and views. For more information visit [here](https://docs.aws.amazon.com/redshift/latest/dg/c_visibility-of-data.html).

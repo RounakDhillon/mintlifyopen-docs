@@ -1,14 +1,13 @@
 ---
 title: Run the BigQuery Connector Externally
 description: Configure BigQuery database connections in OpenMetadata using YAML. Complete setup guide with authentication, SSL, and connection parameters.
-slug: /connectors/database/bigquery/yaml
 sidebarTitle: Run Externally
 mode: "wide"
 ---
 import { ConnectorDetailsHeader } from '/snippets/components/ConnectorDetailsHeader/ConnectorDetailsHeader.jsx'
 import { CodePreview, ContentPanel, ContentSection, CodePanel } from '/snippets/components/CodePreview.jsx'
 import AutoClassification from '/snippets/connectors/yaml/auto-classification.mdx'
-import DataProfiler from '/snippets/connectors/yaml/data-profiler.mdx'
+import DataProfiler from '/snippets/v1.11.x/connectors/yaml/data-profiler.mdx'
 import Lineage from '/snippets/connectors/yaml/lineage.mdx'
 import QueryUsage from '/snippets/connectors/yaml/query-usage.mdx'
 import PartitionedTables from '/snippets/connectors/database/partitioned-tables.mdx'
@@ -18,7 +17,7 @@ import IngestionSinkDef from '/snippets/connectors/yaml/ingestion-sink-def.mdx'
 import WorkflowConfigDef from '/snippets/connectors/yaml/workflow-config-def.mdx'
 import IngestionCli from '/snippets/connectors/yaml/ingestion-cli.mdx'
 import PythonRequirements from '/snippets/connectors/python-requirements.mdx'
-import ExternalIngestionDeployment from '/snippets/connectors/external-ingestion-deployment.mdx'
+import ExternalIngestionDeployment from '/snippets/v1.11.x/connectors/external-ingestion-deployment.mdx'
 import IngestionSink from '/snippets/connectors/yaml/ingestion-sink.mdx'
 import WorkflowConfig from '/snippets/connectors/yaml/workflow-config.mdx'
 import SourceConfigDef from '/snippets/connectors/yaml/database/source-config-def.mdx'
@@ -41,7 +40,6 @@ Configure and schedule BigQuery metadata and profiler workflows from the OpenMet
 - [Data Profiler](#data-profiler)
 - [Data Quality](#data-quality)
 - [dbt Integration](#dbt-integration)
-- [Reverse Metadata](/applications/reverse-metadata)
 <ExternalIngestionDeployment />
 ## Requirements
 ### Python Requirements

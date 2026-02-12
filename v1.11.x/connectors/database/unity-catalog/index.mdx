@@ -1,18 +1,17 @@
 ---
 title: Unity Catalog Connector | OpenMetadata Data Governance
 description: Learn how to connect Unity Catalog to OpenMetadata with our comprehensive connector guide. Setup instructions, configuration tips, and metadata integrat...
-slug: /connectors/database/unity-catalog
 sidebarTitle: Overview
 ---
-import ReverseMetadata from '/snippets/connectors/database/unitycatalog/reverse-metadata.mdx'
+
 import { ConnectorDetailsHeader } from '/snippets/components/ConnectorDetailsHeader/ConnectorDetailsHeader.jsx'
-import ExternalIngestionDeployment from '/snippets/connectors/external-ingestion-deployment.mdx'
+import ExternalIngestionDeployment from '/snippets/v1.11.x/connectors/external-ingestion-deployment.mdx'
 import TestConnection from '/snippets/connectors/test-connection.mdx'
 import IngestionScheduleAndDeploy from '/snippets/connectors/ingestion-schedule-and-deploy.mdx'
 import ConfigureIngestion from '/snippets/connectors/database/configure-ingestion.mdx'
 import AdvancedConfiguration from '/snippets/connectors/database/advanced-configuration.mdx'
 import { MetadataIngestionUi } from '/snippets/components/MetadataIngestionUi.jsx'
-import Related from '/snippets/connectors/database/related.mdx'
+import Related from '/snippets/v1.11.x/connectors/database/related.mdx'
 
 <ConnectorDetailsHeader
 icon='/public/images/connectors/databrick.webp'
@@ -28,7 +27,7 @@ Configure and schedule Unity Catalog metadata workflow from the OpenMetadata UI:
 - [Lineage](/connectors/ingestion/lineage)
 - [dbt Integration](/connectors/ingestion/workflows/dbt)
 - [Troubleshooting](/connectors/database/unity-catalog/troubleshooting)
-- [Reverse Metadata](#reverse-metadata)
+
 <ExternalIngestionDeployment />
 ## Requirements
 ### Permission Requirement
@@ -76,5 +75,5 @@ For a complete guide on managing secrets in hybrid setups, see the [Hybrid Inges
 <ConfigureIngestion />
 <IngestionScheduleAndDeploy />
 </Steps>
-<ReverseMetadata />
+
 <Related />

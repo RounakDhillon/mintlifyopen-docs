@@ -1,17 +1,16 @@
 ---
 title: Snowflake Connector | OpenMetadata Cloud Data Warehouse
 description: Connect Snowflake to OpenMetadata with our comprehensive database connector guide. Easy setup, metadata extraction, and data lineage tracking.
-slug: /connectors/database/snowflake
 sidebarTitle: Overview
 ---
-import ReverseMetadata from '/snippets/connectors/database/snowflake/reverse-metadata.mdx'
+
 import { ConnectorDetailsHeader } from '/snippets/components/ConnectorDetailsHeader/ConnectorDetailsHeader.jsx'
 import TestConnection from '/snippets/connectors/test-connection.mdx'
 import IngestionScheduleAndDeploy from '/snippets/connectors/ingestion-schedule-and-deploy.mdx'
 import ConfigureIngestion from '/snippets/connectors/database/configure-ingestion.mdx'
 import AdvancedConfiguration from '/snippets/connectors/database/advanced-configuration.mdx'
 import { MetadataIngestionUi } from '/snippets/components/MetadataIngestionUi.jsx'
-import Related from '/snippets/connectors/database/related.mdx'
+import Related from '/snippets/v1.11.x/connectors/database/related.mdx'
 
 <ConnectorDetailsHeader
 icon='/public/images/connectors/snowflakes.webp'
@@ -30,7 +29,7 @@ Configure and schedule Snowflake metadata and profiler workflows from the OpenMe
 - [Lineage](/connectors/ingestion/lineage)
 - [dbt Integration](/connectors/ingestion/workflows/dbt)
 - [Troubleshooting](/connectors/database/snowflake/troubleshooting)
-- [Reverse Metadata](#reverse-metadata)
+
 ## Requirements
 To ingest basic metadata snowflake user must have the following privileges:
   - `USAGE` Privilege on Warehouse
@@ -118,5 +117,5 @@ GRANT APPLY PROJECTION POLICY TO ROLE NEW_ROLE;
 GRANT APPLY TAG TO ROLE NEW_ROLE;
 ```
 Depending on your view ddl you can grant the relevant privileged as per above queries.
-<ReverseMetadata />
+
 <Related />
